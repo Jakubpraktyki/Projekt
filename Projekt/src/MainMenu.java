@@ -29,6 +29,7 @@ public class MainMenu {
                         int liczba = skaner.nextInt();
                         switch (liczba) {
                             case 1: {
+                                try{
                                 char[][] board = new char[3][3];
                                 Plansza1 plansza1 = new Plansza1();
                                 Wygrana wygrana = new Wygrana();
@@ -80,8 +81,12 @@ public class MainMenu {
 
 
                                 }
+                                }catch (Exception exception){
+                                        System.out.println("Podałeś złą opcję");
+                                }
+                                  break;  
                             }
-                            break;
+                            
 
 
                             case 2: {
